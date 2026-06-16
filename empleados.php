@@ -1,11 +1,12 @@
 <?php
-// ==========================================
-// CONFIGURACIÓN DE LA BASE DE DATOS (MAESTRO)
-// ==========================================
-$host = '127.0.0.1';      // Localhost porque el servidor web y MySQL están en la misma máquina (Juan)
-$user = 'root';
-$pass = 'jcsl28034';      // Cambia si la contraseña es diferente
-$db   = 'db_distribuida';
+// ============================================================
+// CONFIGURACIÓN DE LA BASE DE DATOS (MAESTRO) - PERSONALIZA AQUÍ
+// ============================================================
+
+$host = '127.0.0.1';           // O la IP del maestro (ej. 192.168.1.10)
+$user = 'root';                // Usuario de MySQL
+$pass = 'TU_CONTRASEÑA_AQUI';  // ¡Cámbiala por tu contraseña real en tu equipo!
+$db   = 'db_distribuida';      // Nombre de la base de datos
 
 $conn = new mysqli($host, $user, $pass, $db);
 if ($conn->connect_error) {
